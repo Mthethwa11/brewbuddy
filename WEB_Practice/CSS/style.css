@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+/* Header */
+header {
+    background-color: #d75e2c; /* Peru */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.name h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.name p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Highlight color */
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Side Drawer */
+.side-drawer {
+    height: 100%;
+    width: 250px;
+    background-color: #d75e2c; /* Peru */
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.side-drawer.open {
+    left: 0;
+}
+
+.side-drawer ul {
+    list-style-type: none;
+}
+
+.side-drawer ul li {
+    padding: 10px 20px;
+}
+
+.side-drawer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.side-drawer ul li a:hover {
+    background-color: #333;
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #d75e2c; /* Peru */
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #a34f29; /* Darker Peru */
+    padding: 10px
+}
